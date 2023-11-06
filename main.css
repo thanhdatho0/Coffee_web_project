@@ -1,20 +1,25 @@
-#header{
+/* Begin Header */
+#header {
     background-color: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
-.header__container{
+.header__container {
     width: 100%;
     padding: 45px 40px;
     display: flex;
     align-items: center;
+    box-shadow: 1px 1px 5px #ccc;
 }
 
-.header-left-side{
+.header-left-side {
     display: inline-flex;
     align-items: center;
 }
 
-.menu__button{
+.menu__button {
     display: inline-flex;
     border: none;
     background: none;
@@ -22,43 +27,109 @@
     margin-right: 10px;
 }
 
-.search-form{
+.search-form {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.search-form-tile{
+.search-form-tile {
     margin-right: 15px;
     margin-bottom: -4px;
     font-size: 18px;
 }
 
-.search-icon{
+.search-icon {
     border: none;
     margin-left: 5px;
     background-color: transparent;
 }
 
-.search-form input{
+.search-form input {
     border: none;
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
+    font-size: 16px;
 }
 
-.search-form input:focus{
+.search-form input:focus {
     outline: none;
     border-radius: 1px solid #000;
 }
 
-.header-right-side{
+.header-right-side {
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
-.header-right-side a{
+.header-right-side a {
     text-decoration: none;
     color: var(--text-color);
     margin: 0 15px;
+}
+
+.shopping-cart{
+    position: relative;
+}
+
+.shopping-cart-list{
+    position: absolute;
+    background-color: #fff;
+    border: 0.8px solid #000;
+    width: 360px;
+    top: 100;
+    right: 15px;
+    padding: 25px 20px 40px;
+    margin-top: 30px;
+    visibility: hidden;
+}
+
+.shopping-cart-list::before{
+    position: absolute;
+    content: "";
+    top: -30px;
+    right: 0;
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.shopping-cart-list span{
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 37.79px;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.cart-content{
+    height: 48px;
+    line-height: 78px;
+    color: #666;
+}
+
+.shopping-cart:hover .shopping-cart-list{
+    visibility: visible;
+    animation: showCart 0.3s ease-in;
+}
+
+@keyframes showCart{
+    from{
+        opacity: 0;
+    }
+    to{
+        
+        opacity: 1;
+    }
+}
+/* End Header */
+
+#content {
+
+}
+
+#footer {
+
 }
