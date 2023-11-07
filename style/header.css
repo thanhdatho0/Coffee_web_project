@@ -6,8 +6,8 @@
     left: 0;
     z-index: 1000;
     padding: 45px 40px;
-    box-shadow: 1px 1px 5px #ccc;
-    transition: 1s;
+    /* box-shadow: 1px 1px 5px #ccc; */
+    transition: all .5s ease;
 }
 
 .header__container {
