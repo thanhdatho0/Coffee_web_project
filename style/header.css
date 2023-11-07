@@ -1,4 +1,4 @@
-/* Begin Header */
+
 #header {
     background-color: #fff;
     position: fixed;
@@ -173,15 +173,3 @@
     top: -13px;
 }
 
-/* End Header */
-
-
-
-#content {
-    height: 1000px;
-
-}
-
-#footer {
-
-}

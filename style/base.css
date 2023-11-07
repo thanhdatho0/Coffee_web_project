@@ -13,6 +13,8 @@ html{
 :root{
     --text-color: #000;
     --subject-color: #B28242;
+    --item-width: 327.16px;
+    --item-height: 490.43px;
 }
 
 .third-col{
