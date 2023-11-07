@@ -81,3 +81,33 @@
     font-weight: 400;
 }
 
+.content-footer{
+    padding: 0 15px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.content-see-more{
+    
+}
+
+.see-more-btn{
+    outline: none;
+    border: none;
+    padding: 10px 38px;
+    background-color: #000;
+    border-width: 2px;
+    transition: .5s;
+}
+
+.see-more-btn:hover{
+    background-color: var(--subject-color);
+}
+
+.see-more-btn{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+}

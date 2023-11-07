@@ -1,0 +1,45 @@
+#footer{
+    
+}
+
+.footer-heading{
+    width: 100%;
+}
+
+.top-box{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes{
+    width: calc(100%/4);
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 15px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.boxes:not(:last-child){
+    margin-right: 1px;
+}
+
+.boxes-icon{
+    margin-bottom: 12px;
+}
+
+.boxes-desc{
+    margin-bottom: 4px;
+}
+
+.boxes a{
+    text-decoration: none;
+    color: #fff;
+}

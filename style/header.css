@@ -7,7 +7,7 @@
     z-index: 1000;
     padding: 45px 40px;
     box-shadow: 1px 1px 5px #ccc;
-    transition: .2s;
+    transition: 1s;
 }
 
 .header__container {
@@ -149,10 +149,11 @@
 
 .heart-icon{
     position: relative;
+    transition: all 0.4s ease;
 }
 
 .heart-icon:hover{
-    animation: change_heart_color 0.4s ease-in-out;
+    animation: change_heart_color 0.4s ease;
     color: var(--subject-color);
 }
 

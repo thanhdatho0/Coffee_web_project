@@ -1,5 +1,5 @@
 // Change header height when scroll start
-window.onscroll = function(){scrollFunction()};
+window.onscroll = function(){scrollFunction(), 5000};
 
 function scrollFunction(){
     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
