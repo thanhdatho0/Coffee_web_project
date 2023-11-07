@@ -4,14 +4,16 @@
     position: fixed;
     right: 0;
     left: 0;
+    z-index: 1000;
+    padding: 45px 40px;
+    box-shadow: 1px 1px 5px #ccc;
+    transition: .2s;
 }
 
 .header__container {
     width: 100%;
-    padding: 45px 40px;
     display: flex;
     align-items: center;
-    box-shadow: 1px 1px 5px #ccc;
 }
 
 .header-left-side {
@@ -150,8 +152,8 @@
 }
 
 .heart-icon:hover{
-    animation: change_heart_color 0.2s, ease-in;
-    color: #B28242;
+    animation: change_heart_color 0.4s ease-in-out;
+    color: var(--subject-color);
 }
 
 @keyframes change_heart_color{
@@ -159,7 +161,7 @@
         color: #000;
     }
     to{
-        color: #B28242;
+        color: var(--subject-color);
     }
 }
 
@@ -173,7 +175,10 @@
 
 /* End Header */
 
+
+
 #content {
+    height: 1000px;
 
 }
 

@@ -1,0 +1,98 @@
+#slider{
+    padding-top: 122px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slides input:not(:last-child){
+    margin-right: 10px;
+}
+
+.slide{
+    transition: 2s;
+}
+
+.slides img{
+    width: 1488px;
+}
+
+/* Manual slide navigation start */
+.navigation-manual{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    background-color: #000;
+    opacity: 0.2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    opacity: 1;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25.3%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50.6%;
+}
+/* Manual slide navigation end */
+
+/* Auto slide navigation start */
+.navigation-auto{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div{
+    background-color: #000;
+    opacity: 0.2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    opacity: 1;
+}
+
+/* Auto slide navigation end */
