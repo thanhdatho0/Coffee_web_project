@@ -1,3 +1,4 @@
+
 #content{
     padding: 122px 0;
 }
@@ -17,6 +18,15 @@
 .content-col2>img{
     width: 635px;
     display: block;
+}
+
+.sticky-form{
+    position: relative;
+    max-width: 635px;
+}
+ 
+.sticky-form #fixed-form{
+    max-width: 605px;
 }
 
 .product-details{
