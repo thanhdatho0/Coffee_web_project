@@ -204,3 +204,44 @@
 .guide-list i{
     margin-right: 10px;
 }
+
+.content-footer{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 120px auto 0;
+}
+
+.rating-wrapper{
+    text-align: center;
+}
+
+.rating-title{
+    margin-bottom: 50px;
+}
+
+.rating-title span{
+    font-size: 26px;
+}
+
+.notlogged-caution{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #D9EDF7;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #31708F;
+    letter-spacing: 1px;
+}
+
+.notlogged-caution i{
+    margin-right: 15px;
+}
+
+.notlogged-caution a{
+    text-decoration: none;
+    color: var(--subject-color);
+}
