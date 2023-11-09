@@ -1,0 +1,195 @@
+#content{
+    padding: 122px 0;
+}
+
+.content-wrapper{
+    width: calc(100% - 80px);
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-col2{
+    width: calc(100%/2);
+    padding: 0 15px;
+}
+
+.content-col2>img{
+    width: 635px;
+    display: block;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: normal;
+    color: var(--text-color);
+}
+
+.product-price{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.product-id{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product-size{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.separate-line{
+    width: 100%;
+    border: 0.5px solid #000;
+    margin: 30px 0 40px;
+}
+
+.amount-title,
+.size-title{
+    display: inline-flex;
+    max-width: 130px;
+    flex: 0 0 130px;
+}
+
+
+.size-options{
+    list-style: none;
+    display: inline-flex;
+    max-width: calc(100% - 130px);
+    flex: 0 0 calc(100% - 130px);
+}
+
+.size-options input{
+    display: none;
+}
+
+.size-options label{
+    background-color: transparent;  /*#000*/
+    width: 35px;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #000;
+    text-align: center;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#size-choosen1:checked ~ #size-list1{
+    background-color: #000;
+    color: #fff;
+}
+
+#size-choosen2:checked ~ #size-list2{
+    background-color: #000;
+    color: #fff;
+}
+
+#size-choosen3:checked ~ #size-list3{
+    background-color: #000;
+    color: #fff;
+}
+
+#size-choosen4:checked ~ #size-list4{
+    background-color: #000;
+    color: #fff;
+}
+
+.product-amount{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.amount-details{
+    border: 0.2px solid #EEEEEE;
+}
+
+.amount-details button{
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin: 12px 12px;
+    cursor: pointer;
+}
+
+.amount-details span{
+    font-size: 16px;
+    margin: 0 12px;
+}
+
+.buy-selections{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 20px 0;
+}
+
+.buy-selections div{
+    padding: 5px 20px;
+    background-color: #fff;
+    margin-right: 10px;
+    width: 240px;
+    max-width: 240px;
+    min-height: 45px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+
+.buy-selections div:first-child{
+    background-color: #000;
+}
+
+.buy-selections div:first-child button{
+    color: #fff;
+}
+
+.buy-selections button{
+    color: #000;
+    border: none;
+    background-color: transparent;
+    line-height: 35px;
+    font-weight: 600;
+}
+
+.buy-selections div:hover{
+    background-color: var(--subject-color);
+    border-color: var(--subject-color);
+}
+
+.buy-selections div:hover button{
+    color: #fff;
+}
+
+.buy-guide{
+    
+}
+
+.guide-list{
+    margin-top: 30px;
+    list-style: none;
+}
+
+.guide-list li{
+    margin-bottom: 20px;
+}
+
+.guide-list i{
+    margin-right: 10px;
+}
