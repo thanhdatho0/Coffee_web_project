@@ -20,13 +20,14 @@
     display: block;
 }
 
-.sticky-form{
+#sticky-form{
     position: relative;
     max-width: 635px;
 }
  
-.sticky-form #fixed-form{
+#sticky-form #fixed-form{
     max-width: 605px;
+    transition: all .5s ease;
 }
 
 .product-details{
