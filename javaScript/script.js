@@ -50,7 +50,18 @@ function fixed_content(){
     var content_height = document.getElementById("fixed-form").getBoundingClientRect().height;
     var scrollTop = document.documentElement.scrollTop;
 
-    if(scrollTop < limit - content_height){
+    if(scrollTop <= limit - (content_height - 30)){
+        if(scrollTop > 50){
+            document.getElementById("fixed-form").style.transform = `translateY(-${30}px)`;
+        }
+        else{
+            document.getElementById("fixed-form").style.transform = "";
+        }
         document.getElementById("fixed-form").style.position = "fixed";
+        document.getElementById("fixed-form").style.bottom = "";
+    }
+    else{
+        document.getElementById("fixed-form").style.position = "absolute";
+        document.getElementById("fixed-form").style.bottom = "-30px";
     }
 }
