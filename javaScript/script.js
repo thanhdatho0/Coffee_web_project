@@ -65,3 +65,14 @@ function fixed_content(){
         document.getElementById("fixed-form").style.bottom = "-30px";
     }
 }
+
+// Side bar Navigation js start
+
+var closeMenu = document.getElementById("navigation")
+function close_menu(){
+    closeMenu.style.left = "-345px";
+}
+
+function open_menu(){
+    closeMenu.style.left = "0";
+}

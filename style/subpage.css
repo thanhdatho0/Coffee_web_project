@@ -81,6 +81,7 @@
     display: inline-flex;
     max-width: calc(100% - 130px);
     flex: 0 0 calc(100% - 130px);
+    user-select: none;
 }
 
 .size-options input{

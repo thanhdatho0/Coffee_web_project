@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/style/slider.css">
     <link rel="stylesheet" href="/style/content.css">
     <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/navigation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,7 +26,7 @@
         <div class="header__container" id="change_height">
             <div class="header-left-side third-col">
                 <div class="menu">
-                    <button class="menu__button">
+                    <button class="menu__button" onmouseenter="open_menu()">
                         <i class="fa-solid fa-bars fa-xl bar-icon" id="test"></i>
                         <i class="fa-solid fa-x fa-xl x-icon"></i>
                     </button>
@@ -87,6 +88,39 @@
         </div>
     </div>
     <!-- HEADER END -->
+
+    <!-- NAVIGATION START -->
+    <div id="navigation" onmouseleave="close_menu()">
+        <div class="navi-wrapper">
+            <div class="close-btn">
+                <button onclick="close_menu()"><i class="fa-solid fa-xmark fa-xl"></i></button>
+            </div>
+            <div class="navi-main-content">
+                <div class="navi-logo">
+                    <strong>
+                        <img src="https://elise.vn/media/logo/default/logo_color.png" alt="" class="navi-logo-img"
+                            width="167" height="28">
+                    </strong>
+                </div>
+
+                <div class="navi-options">
+                    <ul class="navi-options-list">
+                        <li class="navi-choice"><a href="">BỘ SƯU TẬP</a></li>
+                        <li class="navi-choice"><a href="">THỜI TRANG NỮ</a></li>
+                        <li class="navi-choice"><a href="">PHỤ KIỆN</a></li>
+                        <li class="navi-choice"><a href="">SALE UP TO 50%</a></li>
+                        <li class="navi-choice"><a href="">ELISE STORY</a></li>
+                        <li class="navi-choice"><a href="">THẺ THÀNH VIÊN</a></li>
+                        <li class="navi-choice"><a href="">HỆ THỐNG CỬA HÀNG</a></li>
+                        <li class="navi-choice"><a href="">THÔNG TIN</a></li>
+                        <li class="navi-choice"><a href="">ESG ACTIVITES</a></li>
+                        <li class="navi-choice"><a href="">MAY ĐO ĐỒNG PHỤC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NAVIGATION END -->
 
     <!-- SLIDER START -->
     <div id="slider">
@@ -150,7 +184,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col2-row1-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col2-row1-pic2.jpg" alt="" class="item-img">
@@ -162,7 +196,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col3-row1-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col3-row1-pic2.jpg" alt="" class="item-img">
@@ -174,7 +208,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col4-row1-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col4-row1-pic2.jpg" alt="" class="item-img">
@@ -188,7 +222,7 @@
                 </ul>
                 <ul class="item-rows">
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col1-row2-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col1-row2-pic2.jpg" alt="" class="item-img">
@@ -200,7 +234,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col2-row2-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col2-row2-pic2.jpg" alt="" class="item-img">
@@ -212,7 +246,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col3-row2-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col3-row2-pic2.jpg" alt="" class="item-img">
@@ -224,7 +258,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col4-row2-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col4-row2-pic2.jpg" alt="" class="item-img">
@@ -238,7 +272,7 @@
                 </ul>
                 <ul class="item-rows">
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col1-row3-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col1-row3-pic2.jpg" alt="" class="item-img">
@@ -250,7 +284,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col2-row3-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col2-row3-pic2.jpg" alt="" class="item-img">
@@ -262,7 +296,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col3-row3-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col3-row3-pic2.jpg" alt="" class="item-img">
@@ -274,7 +308,7 @@
                         </a>
                     </li>
                     <li class="content-items">
-                        <a href="#" class="items">
+                        <a href="/subpage.html" class="items">
                             <div class="img-wrapper">
                                 <img src="/img/content img/col4-row3-pic1.jpg" alt="" class="item-img">
                                 <img src="/img/content img/col4-row3-pic2.jpg" alt="" class="item-img">
@@ -329,9 +363,9 @@
                             <h4 class="contact-title">Thông tin</h4>
                             <ul class="contact-list">
                                 <li><a href="#">
-                                    CÔNG TY TNHH THỜI TRANG ELISE 
-                                    Tầng 8 - Số 2 Tôn Thất Tùng - Đống Đa - Hà Nội 
-                                </a></li>
+                                        CÔNG TY TNHH THỜI TRANG ELISE
+                                        Tầng 8 - Số 2 Tôn Thất Tùng - Đống Đa - Hà Nội
+                                    </a></li>
                                 <li><a href="#">19003060</a></li>
                                 <li><a href="#">support@elise.vn</a></li>
                                 <li><a href="#">MST: 0108393204</a></li>
@@ -344,8 +378,8 @@
                             <h4 class="contact-title">Liên hệ</h4>
                             <ul class="contact-list">
                                 <li><a href="#">
-                                    Giới thiệu
-                                </a></li>
+                                        Giới thiệu
+                                    </a></li>
                                 <li><a href="#">Tin tức</a></li>
                                 <li><a href="#">Hệ thống cửa hàng</a></li>
                                 <li><a href="#">Trợ giúp</a></li>
