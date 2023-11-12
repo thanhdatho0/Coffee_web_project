@@ -25,3 +25,7 @@ html{
     max-width: 464.25px;
     padding: 0 15px;
 }
+
+.clear{
+    clear: both;
+}

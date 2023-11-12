@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="/style/content.css">
     <link rel="stylesheet" href="/style/footer.css">
     <link rel="stylesheet" href="/style/navigation.css">
+    <link rel="stylesheet" href="/style/log-in.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>    
     <script src="javaScript/script.js" async></script>
-
 </head>
 
 <body>
@@ -26,7 +27,7 @@
         <div class="header__container" id="change_height">
             <div class="header-left-side third-col">
                 <div class="menu">
-                    <button class="menu__button" onmouseenter="open_menu()">
+                    <button class="menu__button">
                         <i class="fa-solid fa-bars fa-xl bar-icon" id="test"></i>
                         <i class="fa-solid fa-x fa-xl x-icon"></i>
                     </button>
@@ -61,10 +62,10 @@
                 </div>
 
                 <div class="acount">
-                    <a href="#" class="acount-access">
+                    <button class="account-access">
                         <i class="fa-regular fa-user fa-lg user-icon"></i>
                         <span>Tài khoản</span>
-                    </a>
+                    </button>
                 </div>
 
                 <div class="shopping-cart">
@@ -90,37 +91,13 @@
     <!-- HEADER END -->
 
     <!-- NAVIGATION START -->
-    <div id="navigation" onmouseleave="close_menu()">
-        <div class="navi-wrapper">
-            <div class="close-btn">
-                <button onclick="close_menu()"><i class="fa-solid fa-xmark fa-xl"></i></button>
-            </div>
-            <div class="navi-main-content">
-                <div class="navi-logo">
-                    <strong>
-                        <img src="https://elise.vn/media/logo/default/logo_color.png" alt="" class="navi-logo-img"
-                            width="167" height="28">
-                    </strong>
-                </div>
-
-                <div class="navi-options">
-                    <ul class="navi-options-list">
-                        <li class="navi-choice"><a href="">BỘ SƯU TẬP</a></li>
-                        <li class="navi-choice"><a href="">THỜI TRANG NỮ</a></li>
-                        <li class="navi-choice"><a href="">PHỤ KIỆN</a></li>
-                        <li class="navi-choice"><a href="">SALE UP TO 50%</a></li>
-                        <li class="navi-choice"><a href="">ELISE STORY</a></li>
-                        <li class="navi-choice"><a href="">THẺ THÀNH VIÊN</a></li>
-                        <li class="navi-choice"><a href="">HỆ THỐNG CỬA HÀNG</a></li>
-                        <li class="navi-choice"><a href="">THÔNG TIN</a></li>
-                        <li class="navi-choice"><a href="">ESG ACTIVITES</a></li>
-                        <li class="navi-choice"><a href="">MAY ĐO ĐỒNG PHỤC</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="navigation"></div>
     <!-- NAVIGATION END -->
+
+    <!-- LOG-IN FORM START -->
+    <div id="overlay"></div>
+    <form id="Log-in-form" action=""></form>
+    <!-- LOG-IN FORM END -->
 
     <!-- SLIDER START -->
     <div id="slider">
@@ -164,6 +141,7 @@
     </div>
     <!-- SLIDER END -->
 
+    <!-- CONTENT START -->
     <div id="content">
         <div class="content-wrapper">
             <div class="content-heading">
@@ -328,7 +306,9 @@
             </div>
         </div>
     </div>
+    <!-- CONTENT END -->
 
+    <!-- FOOTER START -->
     <div id="footer">
         <header class="footer-heading">
             <ul class="top-box">
@@ -436,6 +416,8 @@
             </div>
         </div>
     </div>
+    <!-- FOOTER END -->
+
 </body>
 
 </html>
