@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/style/slider.css">
     <link rel="stylesheet" href="/style/content.css">
     <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/static_form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,9 +24,9 @@
     <script src="/javaScript/script.js" async></script>
 </head>
 
-<body id="dynamic">
+<body id="static">
     <!-- HEADER START -->
-    <div id="header">
+    <div id="header" class="transparent-header">
         <div class="header__container" id="change_height">
             <div class="header-left-side third-col">
                 <div class="menu">
@@ -103,42 +104,8 @@
 
     <!-- SLIDER START -->
     <div id="slider">
-        <div class="slides">
-            <!-- radio buttons start -->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <!-- radio buttons end -->
-
-            <!-- slide img start -->
-            <div class="slide first">
-                <img src="/img/slider img/cv-woolen.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="/img/slider img/cv-knit.jpg" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="/img/slider img/cv-0111.jpg" alt="">
-            </div>
-            <!-- slide img end -->
-
-            <!-- auto navigation start -->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-            <!-- auto navigation end -->
-
-            <!-- manual navigation start -->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-            <!-- manual navigation end -->
+        <div class="static-slide">
+            <img src="/img/SaleUp/cv-1311.jpg" alt="">
         </div>
     </div>
     <!-- SLIDER END -->
@@ -147,55 +114,68 @@
     <div id="content">
         <div class="content-wrapper">
             <div class="content-heading">
-                <h3 class="content-topic">NEW ARRIVAL</h3>
+                <ul class="social-link">
+                    <li><a href="#"><i class="fa-brands fa-facebook "></i>FACEBOOK</a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i>TIKTOK</a></li>
+                    <li><a href="#"><i class="fa-brands fa-shopify" style="color: #E14B1C;"></i>SHOPEE</a></li>
+                    <li><a href="#"><img src="https://elise.vn/media/wysiwyg/ECOM/logo-lazada-2.png" width="14px" style="margin-right: 5px;" alt="">LAZDA</a></li>
+                </ul>
             </div>
             <div class="content-list">
                 <ul class="item-rows">
                     <li class="content-items">
                         <a href="/viewProduct_1.1.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col1-row1-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col1-row1-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row1_col1.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">JUPE TAFTA ĐEN CẠP CHÉO ĐÍNH TRANG TRÍ</span>
-                                <p class="item-price">1.298.000 VND</p>
+                                <span class="item-desc">TÚI XÁCH TAY QUAI XÍCH - XANH</span>
+                                <p class="item-price">2.498.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_1.2.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col2-row1-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col2-row1-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row1_col2.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">VEST DẠ LÔNG CỪU HỒNG CỔ TRÒN</span>
-                                <p class="item-price">5.498.000 VND</p>
+                                <span class="item-desc">TÚI XÁCH DẠNG HỘP - XÁM</span>
+                                <p class="item-price">1.998.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_1.3.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col3-row1-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col3-row1-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row1_col3.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">JUPE DẠ VÀNG LÔNG CỪU</span>
-                                <p class="item-price">2.998.000 VND</p>
+                                <span class="item-desc">TÚI XÁCH TAY QUAI XÍCH - TÍM</span>
+                                <p class="item-price">2.498.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_1.4.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col4-row1-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col4-row1-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row1_col4.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">VEST DẠ VÀNG LÔNG CỪU</span>
-                                <p class="item-price">5.498.000 VND</p>
+                                <span class="item-desc">TÚI XÁCH DẠNG HỘP - ĐỎ</span>
+                                <p class="item-price">1.998.000 VND</p>
                             </div>
                         </a>
                     </li>
@@ -204,48 +184,56 @@
                     <li class="content-items">
                         <a href="/viewProduct_2.1.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col1-row2-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col1-row2-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row2_col1.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">JUPE DẠ LÔNG CỪU ĐỎ BOC ĐO</span>
-                                <p class="item-price">2.498.000 VND</p>
+                                <span class="item-desc">TÚI ĐEO VAI PHỐI DÂY XÍCH LỚN - NÂU</span>
+                                <p class="item-price">2.298.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_2.2.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col2-row2-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col2-row2-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row2_col2.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">VEST DẠ LÔNG CỪU ĐỎ BOC ĐO</span>
-                                <p class="item-price">4.998.000 VND</p>
+                                <span class="item-desc">TÚI ĐEO VAI PHỐI DÂY XÍCH LỚN - ĐEN</span>
+                                <p class="item-price">2.298.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_2.3.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col3-row2-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col3-row2-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row2_col3.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">MT DẠ LÔNG CỪU XANH ĐAI EO</span>
-                                <p class="item-price">7.998.000 VND</p>
+                                <span class="item-desc">TÚI XÁCH TAY DA TRƠN NẮP GẬP - XANH</span>
+                                <p class="item-price">2.298.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_2.4.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col4-row2-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col4-row2-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row2_col4.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">SET LEN ĐEN CHẤM BI</span>
-                                <p class="item-price">1.698.000 VND</p>
+                                <span class="item-desc">TÚI XÁCH TAY DA TRƠN NẮP GẬP - NÂU</span>
+                                <p class="item-price">2.298.000 VND</p>
                             </div>
                         </a>
                     </li>
@@ -254,48 +242,56 @@
                     <li class="content-items">
                         <a href="/viewProduct_3.1.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col1-row3-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col1-row3-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row3_col1.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">QUẦN UMI ĐEN GÂN GIỮA TÚI ỐP</span>
-                                <p class="item-price">1.198.000 VND</p>
+                                <span class="item-desc">TÚI XÁCH HỌA TIẾT TRẦN TRÁM - TÍM</span>
+                                <p class="item-price">1.698.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_3.2.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col2-row3-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col2-row3-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row3_col2.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">GILE DẠ LÔNG CỪU TRẮNG TÚI ỐP</span>
-                                <p class="item-price">4.998.000 VND</p>
+                                <span class="item-desc">TÚI XÁCH HỌA TIẾT TRẦN TRÁM - TRẮNG </span>
+                                <p class="item-price">1.698.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_3.3.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col3-row3-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col3-row3-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row3_col3.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">GILE DẠ LÔNG CỪU NÂU TÚI ỐP</span>
-                                <p class="item-price">4.998.000 VND</p>
+                                <span class="item-desc">GIÀY MULES CAO GÓT DA LỘN PHỐI NƠ</span>
+                                <p class="item-price">1.998.000 VND</p>
                             </div>
                         </a>
                     </li>
                     <li class="content-items">
                         <a href="/viewProduct_3.4.html" class="items">
                             <div class="img-wrapper">
-                                <img src="/img/content img/col4-row3-pic1.jpg" alt="" class="item-img">
-                                <img src="/img/content img/col4-row3-pic2.jpg" alt="" class="item-img">
+                                <img src="/img/SaleUp/row3_col4.jpg" alt="" class="item-img">
+                                <div class="sale-number">
+                                    <span>-75%</span>
+                                </div>
                             </div>
                             <div class="item-info">
-                                <span class="item-desc">MT DẠ LÔNG CỪU TRẮNG ĐÍNH CÚC SAU</span>
-                                <p class="item-price">8.998.000 VND</p>
+                                <span class="item-desc">GIÀY MULES CAO GÓT TRANG TRÍ NGỌC TRAI</span>
+                                <p class="item-price">1.998.000 VND</p>
                             </div>
                         </a>
                     </li>
@@ -421,16 +417,9 @@
     <!-- FOOTER END -->
 
     <script>
-        // Auto slide navigation function start
-        var count = 1;
-        setInterval(function () {
-            document.getElementById('radio' + count).checked = true;
-            count++;
-            if (count > 3) {
-                count = 1;
-            }
-        }, 3000);
-        // Auto slide navigation function end
+        $("body").scroll(function(){
+            $(".transparent").css("background-color", "transparent");
+        })
     </script>
 
 </body>

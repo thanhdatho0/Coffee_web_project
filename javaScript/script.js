@@ -1,16 +1,5 @@
-// Auto slide navigation function start
-var count = 1;
-setInterval(function () {
-    document.getElementById('radio' + count).checked = true;
-    count++;
-    if (count > 3) {
-        count = 1;
-    }
-}, 3000);
-// Auto slide navigation function end
-
 // Change header height when scroll start
-window.onscroll = function () { scrollFunction(), addBoxShadow(), fixed_content() };
+window.onscroll = function () { scrollFunction(), addBoxShadow(), fixed_content(), transparent_scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -18,6 +7,17 @@ function scrollFunction() {
     }
     else {
         document.getElementById("header").style.padding = "45px 40px";
+    }
+}
+
+function transparent_scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.padding = "20px 40px";
+        document.getElementById("header").style.backgroundColor = "#fff";
+    }
+    else {
+        document.getElementById("header").style.padding = "45px 40px";
+        document.getElementById("header").style.backgroundColor = "transparent";
     }
 }
 
