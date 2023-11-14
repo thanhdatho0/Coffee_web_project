@@ -1,3 +1,14 @@
+// Auto slide navigation function start
+var count = 1;
+setInterval(function () {
+    document.getElementById('radio' + count).checked = true;
+    count++;
+    if (count > 3) {
+        count = 1;
+    }
+}, 3000);
+// Auto slide navigation function end
+
 // Change header height when scroll start
 window.onscroll = function () { scrollFunction(), addBoxShadow(), fixed_content() };
 
@@ -91,13 +102,3 @@ $(document).ready(function () {
     // END
 });
 
-// Auto slide navigation function start
-let count = 1;
-setInterval(function () {
-    document.getElementById('radio' + count).checked = true;
-    count++;
-    if (count > 3) {
-        count = 1;
-    }
-}, 3000);
-// Auto slide navigation function end
