@@ -3,7 +3,7 @@
 }
 
 .content-wrapper{
-    padding: 0 15px;
+    /* padding: 0 15px; */
 }
 
 .content-heading{
@@ -27,6 +27,8 @@
     justify-content: space-between;
     list-style: none;
     margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .content-items{

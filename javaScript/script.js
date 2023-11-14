@@ -20,18 +20,6 @@ function addBoxShadow() {
 }
 // Change header height when scroll end
 
-// Auto slide navigation function start
-let count = 1;
-setInterval(function () {
-    document.getElementById('radio' + count).checked = true;
-    count++;
-    if (count > 3) {
-        count = 1;
-    }
-}, 3000);
-// Auto slide navigation function end
-
-
 function plus() {
     if (Number(document.getElementById('vd1').textContent) >= 1) {
         document.getElementById('vd1').innerHTML++;
@@ -103,3 +91,13 @@ $(document).ready(function () {
     // END
 });
 
+// Auto slide navigation function start
+let count = 1;
+setInterval(function () {
+    document.getElementById('radio' + count).checked = true;
+    count++;
+    if (count > 3) {
+        count = 1;
+    }
+}, 3000);
+// Auto slide navigation function end

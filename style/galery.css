@@ -1,0 +1,53 @@
+#content{
+    width: 100vw;
+    padding: 0 15px;
+}
+
+.content-wrapper{
+    width: 100%;
+    padding-top: 122px;
+}
+
+.galery-list{
+    width: 100%;
+}
+
+.galery-list li{
+    width: 100%;
+}
+
+.galery-items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.galery-img-wrapper img{
+    height: 360px;
+    padding-left: 1cm;
+}
+
+.collection-info{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.collection-name{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.collection-desc{
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.release-time{
+    font-size: 15px;
+}
