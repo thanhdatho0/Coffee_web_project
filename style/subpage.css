@@ -36,11 +36,14 @@
 
 .product-name{
     font-family:'Helvetica';
-    font-size: 30px;
-    font-weight: 500;
     margin-bottom: 10px;
     line-height: normal;
     color: var(--text-color);
+}
+
+.product-name h3{
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .product-price{

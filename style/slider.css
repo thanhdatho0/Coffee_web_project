@@ -19,7 +19,7 @@
 }
 
 .slide{
-    transition: 2s;
+    transition: .5s;
 }
 
 .slides img{
