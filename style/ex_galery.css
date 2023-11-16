@@ -1,0 +1,75 @@
+.look-book-detail{
+    background-image: url(/img/look_book/cv-woolen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 708px;
+    position: relative;
+}
+
+.look-book-detail::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.content-wrapper{
+    padding: 0 50px;
+}
+
+.galery_desc{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.galery_desc span i{
+    color: #666;
+}
+
+.col2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col2>div{
+    width: 48%;
+    margin-bottom: 100px;
+}
+
+.col2 a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.col2 img{
+    width: 100%;
+}
+
+.col-full{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.col-full a{
+    display: block;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.col-full img{
+    width: 100%;
+}
+
+.pro_name{
+    font-size: 17px;
+    font-weight: bold;
+}

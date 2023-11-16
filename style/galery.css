@@ -12,6 +12,11 @@
     width: 100%;
 }
 
+.galery-list a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .galery-list li{
     width: 100%;
 }
