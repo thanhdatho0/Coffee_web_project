@@ -1,0 +1,50 @@
+
+.slider-title h2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#content{
+    margin-bottom: 100px;
+}
+
+.container{
+    width: 1000px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 132px 0 40px;
+}
+
+.container p{
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 1px;
+    margin: 40px 0 40px;
+    color: #666;
+}
+
+.container img{
+    width: 100%;
+}
+
+#transparent-slider .col2{
+    max-width: 100%;
+    margin: 140px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#transparent-slider .col2 img{
+    width: 48%;
+}

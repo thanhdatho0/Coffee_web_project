@@ -81,7 +81,13 @@
 .header-right-side a {
     text-decoration: none;
     color: var(--text-color);
-    margin: 0 15px;
+    margin-right: 15px;
+    padding-left: 20px;
+}
+
+.header-right-side button{
+    padding-left: 20px;
+    margin-right: 15px;
 }
 
 .account-access{
@@ -157,7 +163,7 @@
 
 .heart-icon{
     position: relative;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
 
 .heart-icon:hover{

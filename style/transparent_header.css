@@ -1,0 +1,31 @@
+#header-transparent{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 45px 40px;
+    /* box-shadow: 1px 1px 5px #ccc; */
+    transition: all .5s ease;
+}
+
+#transparent-slider #slider{
+    padding-top: 0;
+}
+
+#transparent-slider .slides{
+    position: relative;
+}
+
+.white{
+    color: #fff;
+}
+
+#header-transparent .heart-icon{
+    transition: none;
+}
+
+#header-transparent .border-white{
+    border-bottom: 1px solid #fff;
+}

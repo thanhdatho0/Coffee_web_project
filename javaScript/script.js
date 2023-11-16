@@ -1,5 +1,5 @@
 // Change header height when scroll start
-window.onscroll = function () { scrollFunction(), addBoxShadow(), fixed_content(), transparent_scrollFunction()};
+window.onscroll = function () { scrollFunction(), addBoxShadow(), fixed_content()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -7,17 +7,6 @@ function scrollFunction() {
     }
     else {
         document.getElementById("header").style.padding = "45px 40px";
-    }
-}
-
-function transparent_scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.padding = "20px 40px";
-        document.getElementById("header").style.backgroundColor = "#fff";
-    }
-    else {
-        document.getElementById("header").style.padding = "45px 40px";
-        document.getElementById("header").style.backgroundColor = "transparent";
     }
 }
 
@@ -71,7 +60,7 @@ function close_login_form(){
 }
 
 function close_sideBar(){
-    document.getElementById("navigation").style.left = "-345px";
+    document.getElementById("navigation").style.left = "-350px";
 }
 
 $(document).ready(function () {
@@ -82,7 +71,7 @@ $(document).ready(function () {
         })
         $("#navigation").css("left", "0");
         $("#navigation").mouseleave(function () {
-            $("#navigation").css("left", "-345px");
+            $("#navigation").css("left", "-350px");
         })
     })
     // END
