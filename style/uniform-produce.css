@@ -1,0 +1,42 @@
+#content{
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 122px auto 100px auto;
+}
+
+.content-wrapper img{
+    width: 100%;
+}
+
+.content-wrapper{
+    text-align: center;
+}
+
+
+.content-wrapper .title{
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 40px 0 25px;
+    color: #666;
+}
+
+.content-wrapper .desc{
+    text-align: justify;
+    font-size: 12pt;
+    line-height: 1.75;
+    color: #666;
+}
+
+.uniform-contact{
+    text-align:left;
+}
+
+.uniform-contact .contact-detail{
+    list-style: none;
+    color: #666;
+}
+
+.uniform-contact strong{
+    color: #666;
+    font-size: 16px;
+}

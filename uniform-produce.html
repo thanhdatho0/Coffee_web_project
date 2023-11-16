@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/navigation.css">
     <link rel="stylesheet" href="/style/log-in.css">
-    <link rel="stylesheet" href="/style/slider.css">
-    <link rel="stylesheet" href="/style/content.css">
     <link rel="stylesheet" href="/style/footer.css">
-    <link rel="stylesheet" href="/style/subpage.css">
+    <link rel="stylesheet" href="/style/uniform-produce.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/javaScript/script.js" async></script>
 </head>
 
-<body>
+<body id="dynamic">
     <!-- HEADER START -->
     <div id="header">
         <div class="header__container" id="change_height">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="logo">
                     <strong>
-                        <a href="/index.html"><img src="https://elise.vn/media/logo/default/logo_color.png" alt=""></a>
+                        <a href="index.html"><img src="https://elise.vn/media/logo/default/logo_color.png" alt=""></a>
                     </strong>
                 </div>
             </div>
@@ -100,83 +100,62 @@
     <form id="Log-in-form" action=""></form>
     <!-- LOG-IN FORM END -->
 
+    <!-- CONTENT START -->
     <div id="content">
-        <div class="content-wrapper content-row">
-            <div class="content-col2 content-img">
-                <img src="/img/buy_img/col3_row1/pic1.jpg" alt="" class="content-pics">
-                <img src="/img/buy_img/col3_row1/pic2.jpg" alt="" class="content-pics">
-                <img src="/img/buy_img/col3_row1/pic3.jpg" alt="" class="content-pics">
-                <img src="/img/buy_img/col3_row1/pic4.jpg" alt="" class="content-pics">
-            </div>
-            <div class="content-col2" id="sticky-form" style="margin-left: 46.4px;">
-                <div id="fixed-form">
-                    <div class="product-details">
-                        <div class="product-name">
-                            <h3>JUPE DẠ VÀNG LÔNG CỪU</h3>
-                        </div>
-                        <div class="product-price">
-                            <span>2.998.000 VND</span>
-                        </div>
-                        <div class="product-id">
-                            <span>SKU: FW2212134BKWLYL</span>
-                        </div>
-                        <div class="separate-line"></div>
-                        <div class="product-size">
-                            <p class="size-title">Kích cỡ</p>
-                            <div class="size-options">
-                                <input type="radio" id="size-choosen1" name="size-choose">
-                                <input type="radio" id="size-choosen2" name="size-choose">
-                                <input type="radio" id="size-choosen3" name="size-choose">
-                                <input type="radio" id="size-choosen4" name="size-choose">
-                                <label for="size-choosen1" id="size-list1">S</label>
-                                <label for="size-choosen2" id="size-list2">M</label>
-                                <label for="size-choosen3" id="size-list3">L</label>
-                                <label for="size-choosen4" id="size-list4">XL</label>
-                            </div>
-                        </div>
-                        <div class="product-amount">
-                            <p class="amount-title">Số lượng</p>
-                            <div class="amount-details">
-                                <button onclick="minus()">-</button>
-                                <span id="vd1">1</span>
-                                <button onclick="plus()">+</button>
-                            </div>
-                        </div>
-                        <div class="buy-selections">
-                            <div class="add-to-cart-btn">
-                                <button>THÊM VÀO GIỎ</button>
-                            </div>
-                            <div class="add-to-liked-btn">
-                                <button>THÊM VÀO YÊU THÍCH</button>
-                            </div>
-                            <div class="quickbuy-btn">
-                                <button>MUA NGAY</button>
-                            </div>
-                        </div>
-                        <div class="buy-guide">
-                            <ul class="guide-list">
-                                <li><i class="fa-solid fa-caret-right"></i></i>HƯỚNG DẪN MUA HÀNG</li>
-                                <li><i class="fa-solid fa-caret-right"></i></i>HƯỚNG DẪN CHỌN KÍCH CỠ</li>
-                                <li><i class="fa-solid fa-caret-right"></i></i>CHIA SẺ</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-footer">
-            <div class="rating-wrapper">
-                <div class="rating-title">
-                    <span>ĐÁNH GIÁ SẢN PHẨM</span>
-                </div>
-                <div class="notlogged-caution">
-                    <i class="fa-regular fa-xl fa-flag"></i>
-                    <p>Bạn cần đăng nhập để viết nhận xét. Vui lòng <a href="#">Đăng nhập</a> or <a href="#">Tạo tài khoản</a></p>
-                </div>
+        <div class="content-wrapper">
+            <p><img src="/img/uniform_produce/anh-ban-dau.jpg" alt=""></p>
+            <p class="title">
+                ĐỒNG PHỤC THƯƠNG HIỆU - KHẲNG ĐỊNH VỊ THẾ DOANH NGHIỆP
+            </p>
+            <p class="desc">
+                <span>
+                    Cùng với các dấu hiệu khác như bộ nhận diện thương hiệu, đồng phục công sở đang ngày càng
+                được chú trọng
+                và trở thành một phần trong văn hóa của các doanh nghiệp. Đồng phục sẽ góp phần tạo nên đẳng cấp thương
+                hiệu, thể hiện giá trị văn hóa "tầng sâu” như: Triết lí kinh doanh, niềm tin, chuẩn mực đạo đức, hành
+                vi, …
+                </span> 
+            </p>
+            <p class="desc"> 
+                <span>
+                    Nếu như trước đây người ta nhìn nhận đồng phục công sở chỉ đơn giản là lịch sự để phù hợp
+                với môi trường
+                làm việc văn phòng. Thì nay, các doanh nghiệp đã nhận ra rằng đồng phục công sở chính là chìa khóa để
+                gây ấn tượng, thể hiện những giá trị cốt lõi, tính chuyên nghiệp và hơn cả là sự tôn trọng tuyệt đối
+                dành cho các khách hàng. Chính vì những giá trị đó mà hiện nay, rất nhiều doanh nghiệp đã bắt đầu chú
+                trọng đầu tư hơn cho điều này để nâng tầm thương hiệu của công ty ngày một cao cấp, ấn tượng.
+                </span>
+            </p>
+
+            <iframe style="max-width: 100%; margin-bottom: 10px;" src="https://www.youtube.com/embed/bQp_s2y-A3c" width="620" height="350" frameborder="0"
+                allowfullscreen></iframe>
+
+            <p class="desc">
+                <span>
+                    Elise luôn tự hào là một trong các đơn vị top đầu trong việc sản xuất ra các sản phẩm "đồng
+                phục thương hiệu" chất lượng, mẫu mã đa dạng, sang trọng cùng chất liệu cao cấp, luôn chú trọng xây dựng
+                những thiết kế "độc nhất" cho mỗi doanh nghiệp để giúp làm toát lên được bản sắc văn hóa riêng của từng
+                công ty. Với sự tận tâm tuyệt đối cùng đội ngũ thiết kế sáng tạo, nắm giữ 3 nhà máy với 2000 nhân công
+                cùng kỹ thuật may tiên tiến, mỗi thiết kế đồng phục công sở tại Elise sẽ góp phần trở thành niềm tự hào
+                của các doanh nghiệp.
+                </span>
+            </p>
+
+            <p><img src="/img/uniform_produce/quy-trinh.jpg" alt=""></p>
+            
+            <div class="uniform-contact">
+                <p><strong>Thông tin liên hệ</strong></p>
+                <ul class="contact-detail">
+                    <li>Chi tiết liên hệ Hotline: 19003060</li>
+                    <li>Đồng phục khu vực Miền Bắc Mrs Lan Anh : 0932.333.907 Email: anhnl@elise.vn</li>
+                    <li>Đồng phục khu vực Miền Nam Mr Quốc Nam : 0909.649.221 Email: namnq@elise.vn</li>
+                </ul>
             </div>
         </div>
     </div>
+    <!-- CONTENT END -->
 
+    <!-- FOOTER START -->
     <div id="footer">
         <header class="footer-heading">
             <ul class="top-box">
@@ -254,8 +233,10 @@
                         <div class="contact-item">
                             <div class="download-block">
                                 <div class="download-link">
-                                    <a target="_blank" rel="no-referrer noopener" href="https://apps.apple.com/vn/app/elise-fashion/id1658265482"><img src="/img/footer img/apple-download.png" alt=""></a>
-                                    <a target="_blank" rel="no-referrer noopener" href="https://play.google.com/store/apps/details?id=com.elise.customers&pli=1"><img src="/img/footer img/chplay-download.png" alt=""></a>
+                                    <a target="_blank" rel="no-referrer noopener" href="https://apps.apple.com/vn/app/elise-fashion/id1658265482"><img
+                                            src="/img/footer img/apple-download.png" alt=""></a>
+                                    <a target="_blank" rel="no-referrer noopener" href="https://play.google.com/store/apps/details?id=com.elise.customers&pli=1"><img
+                                            src="/img/footer img/chplay-download.png" alt=""></a>
                                 </div>
                                 <div class="download-qrcode">
                                     <img src="/img/footer img/codepr.jpg" alt="">
@@ -284,6 +265,8 @@
             </div>
         </div>
     </div>
+    <!-- FOOTER END -->
+
 </body>
 
 </html>
