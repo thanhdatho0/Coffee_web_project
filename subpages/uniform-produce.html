@@ -10,11 +10,8 @@
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/navigation.css">
     <link rel="stylesheet" href="/style/log-in.css">
-    <link rel="stylesheet" href="/style/slider.css">
-    <link rel="stylesheet" href="/style/content.css">
     <link rel="stylesheet" href="/style/footer.css">
-    <link rel="stylesheet" href="/style/transparent_header.css">
-    <link rel="stylesheet" href="/style/member_card.css">
+    <link rel="stylesheet" href="/style/uniform-produce.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,23 +19,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/javaScript/subpage_script.js" async></script>
+    <script src="/javaScript/script.js" async></script>
 </head>
 
-<body id="transparent-slider">
+<body id="dynamic">
     <!-- HEADER START -->
-    <div id="header-transparent">
+    <div id="header">
         <div class="header__container" id="change_height">
             <div class="header-left-side third-col">
                 <div class="menu">
-                    <button class="menu__button white">
+                    <button class="menu__button">
                         <i class="fa-solid fa-bars fa-xl bar-icon" id="test"></i>
                         <i class="fa-solid fa-x fa-xl x-icon"></i>
                     </button>
                 </div>
                 <div class="logo">
                     <strong>
-                        <a href="index.html"><img src="https://elise.vn/media/logo/default/logo_color.png" alt=""></a>
+                        <a href="/index.html"><img src="https://elise.vn/media/logo/default/logo_color.png" alt=""></a>
                     </strong>
                 </div>
             </div>
@@ -46,12 +43,12 @@
             <div class="header-center third-col">
                 <div class="search-container">
                     <form action="" class="search-form">
-                        <span class="search-form-tile white">
+                        <span class="search-form-tile">
                             TÌM KIẾM
                         </span>
-                        <input type="text" class="border-white" style="background: transparent;">
+                        <input type="text">
                         <button class="search-icon">
-                            <i class="fa-solid fa-magnifying-glass fa-lg search-icon white"></i>
+                            <i class="fa-solid fa-magnifying-glass fa-lg search-icon"></i>
                         </button>
                     </form>
                 </div>
@@ -60,13 +57,13 @@
             <div class="header-right-side third-col">
                 <div class="phoning-contact">
                     <a href="#" class="phone-contact">
-                        <i class="fa-solid fa-phone fa-lg phone-icon white"></i>
-                        <span class="white">Gọi Ngay</span>
+                        <i class="fa-solid fa-phone fa-lg phone-icon"></i>
+                        <span>Gọi Ngay</span>
                     </a>
                 </div>
 
                 <div class="account">
-                    <button class="account-access white">
+                    <button class="account-access">
                         <i class="fa-regular fa-user fa-lg user-icon"></i>
                         <span>Tài khoản</span>
                     </button>
@@ -74,7 +71,7 @@
 
                 <div class="shopping-cart">
                     <a href="#" class="shopping-cart--access">
-                        <i class="fa-solid fa-cart-shopping fa-lg shopping-cart-icon white"></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg shopping-cart-icon"></i>
                     </a>
                     <div class="shopping-cart-list">
                         <span class="cart-list-title">GIỎ HÀNG</span>
@@ -86,7 +83,7 @@
 
                 <div class="liked-stuff">
                     <a href="#" class="liked--access">
-                        <i class="fa-regular fa-heart fa-lg heart-icon white"></i>
+                        <i class="fa-regular fa-heart fa-lg heart-icon"></i>
                     </a>
                 </div>
             </div>
@@ -103,71 +100,56 @@
     <form id="Log-in-form" action=""></form>
     <!-- LOG-IN FORM END -->
 
-    <!-- SLIDER START -->
-    <div id="slider">
-        <div class="slides">
-            <img src="/img/member card/banner.jpg" alt="">
-            <div class="slider-title white">
-                <h1>CHÍNH SÁCH THẺ THÀNH VIÊN</h1>
-            </div>
-        </div>
-    </div>
-    <!-- SLIDER END -->
-
     <!-- CONTENT START -->
     <div id="content">
         <div class="content-wrapper">
-            <div class="cards">
-                <div class="card">
-                    <div class="card-img"><img src="/img/member card/card-1.png" alt=""></div>
-                    <div class="make-card-required">
-                        <p><strong>ĐIỀU KIỆN LÀM THẺ THÀNH VIÊN</strong></p>
-                        <span class="make-card-detail">Khách hàng mua sản phẩm tại Elise có lưu lại thông tin trên hệ
-                            thống (Họ và tên, số điện
-                            thoại, ngày tháng năm sinh, email…) sẽ được là Khách hàng thành viên tại Elise.</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img"><img src="/img/member card/card-1.png" alt=""></div>
-                    <div class="make-card-required">
-                        <p><strong>ĐIỀU KIỆN LÀM THẺ BẠC</strong></p>
-                        <span class="make-card-detail">Khách hàng mua sản phẩm tại Elise có tổng giá trị mua hàng từ 20 triệu.</span>
-                        <p class="favour"><strong>Ưu đãi</strong></p>
-                        <span class="favour-detail">- Khách hàng được <span style="color: red;">giảm 10%</span> đối với
-                            tất cả các sản phẩm.</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img"><img src="/img/member card/card-2.png" alt=""></div>
-                    <div class="make-card-required">
-                        <p><strong>ĐIỀU KIỆN LÀM THẺ VÀNG</strong></p>
-                        <span class="make-card-detail">Khách hàng mua sản phẩm tại Elise có tổng giá trị mua hàng từ 30 triệu.</span>
-                        <p class="favour"><strong>Ưu đãi</strong></p>
-                        <span class="favour-detail">- Khách hàng được <span style="color: red;">giảm 15%</span> đối với
-                            tất cả các sản phẩm.</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img"><img src="/img/member card/card-3.png" alt=""></div>
-                    <div class="make-card-required">
-                        <p><strong>ĐIỀU KIỆN LÀM THẺ KIM CƯƠNG</strong></p>
-                        <span class="make-card-detail">Khách hàng mua sản phẩm tại Elise có tổng giá trị mua hàng từ 60 triệu.</span>
-                        <p class="favour"><strong>Ưu đãi</strong></p>
-                        <span class="favour-detail">- Khách hàng được <span style="color: red;">giảm 20%</span> đối với
-                            tất cả các sản phẩm.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="note">
-                <p><strong>Lưu ý</strong></p>
-                <div class="policy">
-                    <p><strong>1. LƯU Ý ƯU ĐÃI DÀNH CHO KHÁCH HÀNG VIP</strong></p>
-                    <ul>
-                        <li>- Ưu đãi dành cho khách hàng VIP chỉ <i><u><span style="color: red;">áp dụng với sản phẩm nguyên giá</span></u></i>.</li>
-                        <li>- Ưu đãi cho khách hàng VIP không áp dụng đồng thời với chương trình Sinh nhật khách hàng và các chương trình ưu đãi khác.</li>
-                    </ul>
-                </div>
-                <p><strong>Mọi thắc mắc xin liên hệ số hotline chăm sóc KH: 18002091</strong></p>
+            <p><img src="/img/uniform_produce/anh-ban-dau.jpg" alt=""></p>
+            <p class="title">
+                ĐỒNG PHỤC THƯƠNG HIỆU - KHẲNG ĐỊNH VỊ THẾ DOANH NGHIỆP
+            </p>
+            <p class="desc">
+                <span>
+                    Cùng với các dấu hiệu khác như bộ nhận diện thương hiệu, đồng phục công sở đang ngày càng
+                được chú trọng
+                và trở thành một phần trong văn hóa của các doanh nghiệp. Đồng phục sẽ góp phần tạo nên đẳng cấp thương
+                hiệu, thể hiện giá trị văn hóa "tầng sâu” như: Triết lí kinh doanh, niềm tin, chuẩn mực đạo đức, hành
+                vi, …
+                </span> 
+            </p>
+            <p class="desc"> 
+                <span>
+                    Nếu như trước đây người ta nhìn nhận đồng phục công sở chỉ đơn giản là lịch sự để phù hợp
+                với môi trường
+                làm việc văn phòng. Thì nay, các doanh nghiệp đã nhận ra rằng đồng phục công sở chính là chìa khóa để
+                gây ấn tượng, thể hiện những giá trị cốt lõi, tính chuyên nghiệp và hơn cả là sự tôn trọng tuyệt đối
+                dành cho các khách hàng. Chính vì những giá trị đó mà hiện nay, rất nhiều doanh nghiệp đã bắt đầu chú
+                trọng đầu tư hơn cho điều này để nâng tầm thương hiệu của công ty ngày một cao cấp, ấn tượng.
+                </span>
+            </p>
+
+            <iframe style="max-width: 100%; margin-bottom: 10px;" src="https://www.youtube.com/embed/bQp_s2y-A3c" width="620" height="350" frameborder="0"
+                allowfullscreen></iframe>
+
+            <p class="desc">
+                <span>
+                    Elise luôn tự hào là một trong các đơn vị top đầu trong việc sản xuất ra các sản phẩm "đồng
+                phục thương hiệu" chất lượng, mẫu mã đa dạng, sang trọng cùng chất liệu cao cấp, luôn chú trọng xây dựng
+                những thiết kế "độc nhất" cho mỗi doanh nghiệp để giúp làm toát lên được bản sắc văn hóa riêng của từng
+                công ty. Với sự tận tâm tuyệt đối cùng đội ngũ thiết kế sáng tạo, nắm giữ 3 nhà máy với 2000 nhân công
+                cùng kỹ thuật may tiên tiến, mỗi thiết kế đồng phục công sở tại Elise sẽ góp phần trở thành niềm tự hào
+                của các doanh nghiệp.
+                </span>
+            </p>
+
+            <p><img src="/img/uniform_produce/quy-trinh.jpg" alt=""></p>
+            
+            <div class="uniform-contact">
+                <p><strong>Thông tin liên hệ</strong></p>
+                <ul class="contact-detail">
+                    <li>Chi tiết liên hệ Hotline: 19003060</li>
+                    <li>Đồng phục khu vực Miền Bắc Mrs Lan Anh : 0932.333.907 Email: anhnl@elise.vn</li>
+                    <li>Đồng phục khu vực Miền Nam Mr Quốc Nam : 0909.649.221 Email: namnq@elise.vn</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -284,6 +266,7 @@
         </div>
     </div>
     <!-- FOOTER END -->
+
 </body>
 
 </html>
