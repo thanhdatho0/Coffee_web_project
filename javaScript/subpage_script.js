@@ -5,6 +5,7 @@ function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("header-transparent").style.padding = "20px 40px";
         document.getElementById("header-transparent").style.backgroundColor = "#fff";
+        document.getElementsByClassName("border-white")[0].style.color = "#000";
         for(var i = 0; i < 8; i++){
             document.getElementsByClassName("white")[i].style.color = "#000";
         }
@@ -13,6 +14,7 @@ function scrollFunction() {
     else {
         document.getElementById("header-transparent").style.padding = "45px 40px";
         document.getElementById("header-transparent").style.backgroundColor = "transparent";
+        document.getElementsByClassName("border-white")[0].style.color = "#fff";
         for(var i = 0; i < 8; i++){
             document.getElementsByClassName("white")[i].style.color = "#fff";
         }
